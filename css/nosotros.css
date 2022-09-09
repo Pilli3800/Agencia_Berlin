@@ -1,0 +1,21 @@
+#nosotros {
+  height: 100vh;
+  background-color: var(--color-background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nosotros-text {
+  padding: 3rem;
+  text-align: center;
+}
+
+.nosotros-text h3 {
+  font-size: 2.5rem;
+}
+
+.nosotros-text p {
+  font-size: 1.6rem;
+}

@@ -17,6 +17,7 @@
   font-size: 4em;
   font-weight: 700;
   color: var(--color-active);
+  text-transform: uppercase;
 }
 
 .subtitle-light {
