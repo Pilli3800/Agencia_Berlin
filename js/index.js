@@ -1,6 +1,6 @@
 const navToggle = document.querySelector(".nav-toggle");
 const navMenu = document.querySelector(".nav-menu");
-const aboutMe = document.querySelector("#aboutme-link");
+const Nosotros = document.querySelector("#nosotros-link");
 const works = document.querySelector("#works-link");
 const contact = document.querySelector("#contact-link");
 
@@ -14,7 +14,7 @@ navToggle.addEventListener("click", () => {
   }
 });
 
-aboutMe.addEventListener("click", () => {
+Nosotros.addEventListener("click", () => {
   navMenu.classList.toggle("nav-menu_visible");
 });
 works.addEventListener("click", () => {

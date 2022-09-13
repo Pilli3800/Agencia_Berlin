@@ -1,6 +1,6 @@
 #hero {
   height: calc(100vh - 8.3vh);
-  background-color: var(--color-primary);
+  background-color: var(--color-background);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,14 +9,11 @@
 
 .hero-text {
   text-align: center;
-  color: white;
-  padding: 0 15rem;
 }
 
 .hero-text h1 {
-  font-size: 4em;
+  font-size: 40px;
   font-weight: 700;
-  color: var(--color-active);
 }
 
 .subtitle-light {
@@ -24,13 +21,13 @@
 }
 
 .hero-text p {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .scroll-down-container {
   display: flex;
   flex-direction: column;
-  margin: 20px 0;
+  margin: 40px 0;
   justify-content: center;
   align-items: center;
 }
@@ -39,7 +36,7 @@
   display: flex;
   justify-content: center;
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .scroll-down-container p {
@@ -47,67 +44,47 @@
   margin: 5px 0;
 }
 
-#scroll-d {
+.indicator {
+  width: 20px;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 50px;
+  position: relative;
+}
+.indicator:before {
+  content: "";
   position: absolute;
-  left: 50%;
-  color: #f0ffff;
-  font-size: 2em;
-  font-weight: 200;
-  animation: bounce-to-down 1.5s ease-in-out infinite;
+  width: 5px;
+  height: 5px;
+  background: black;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 5px;
+  border-radius: 50%;
+  animation: animate 1.5s linear infinite;
 }
-
-@keyframes bounce-to-down {
-  to {
-    transform: rotate(45deg) translateY(2rem) translateX(2rem);
+@keyframes animate {
+  0% {
+    opacity: 1;
+    top: 3px;
+  }
+  100% {
     opacity: 0;
-  }
-}
-@keyframes bounce-to-down {
-  to {
-    transform: translateY(2rem);
-    opacity: 0;
-  }
-}
-
-@media (max-width: 992px) {
-  .hero-text h1 {
-    font-size: 3em;
-  }
-
-  .hero-text p {
-    font-size: 15px;
-  }
-
-  .hero-text {
-    padding: 0 6rem;
+    top: 20px;
+    transform: scale(0.8);
   }
 }
 
 @media (max-width: 768px) {
   #hero {
-    height: 92vh;
-  }
-
-  .hero-text {
-    padding: 0 1rem;
-  }
-
-  .hero-text h1 {
-    font-size: 3em;
-  }
-
-
-  @keyframes bounce-to-down {
-    to {
-      transform: rotate(45deg) translateY(1rem) translateX(1rem);
-      opacity: 0;
-    }
-  }
-
-  @keyframes bounce-to-down {
-    to {
-      transform: translateY(1rem);
-      opacity: 0;
-    }
+    height: calc(100vh - 6.2vh);
   }
 }
+
+@media (max-width: 578px) {
+  #hero {
+    height: auto;
+  }
+}
+

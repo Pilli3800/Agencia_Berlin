@@ -15,30 +15,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;700;800;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://kit.fontawesome.com/31e916c8fd.js" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
     <script defer src="./js/index.js"></script>
 </head>
 
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="#" data-aos="fade-right" class="logo nav-link">Agencia Berlin</a>
+            <a href="#" class="logo nav-link">Agencia Berlin</a>
             <button class="nav-toggle" aria-label="Abrir menú">
-                <i class="fa-solid fa-bars"></i>
+                <i class="fas fa-bars"></i>
             </button>
-            <ul class="nav-menu" data-aos="fade-left">
+            <ul class="nav-menu">
                 <li class="nav-menu-item">
-                    <a href="#nosotros" id="aboutme-link" class="nav-menu-link nav-link">Sobre Nosotros</a>
+                    <a href="#nosotros" id="nosotros-link" class="nav-menu-link nav-link">Sobre Nosotros</a>
                 </li>
                 <li class="nav-menu-item">
-                    <a href="#servicios" id="works-link" class="nav-menu-link nav-link">Servicios</a>
+                    <a href="#works" id="works-link" class="nav-menu-link nav-link">Servicios</a>
                 </li>
                 <li class="nav-menu-item">
-                    <a href="#aliados" id="contact-link" class="nav-menu-link nav-link">Aliados</a>
-                </li>
-                <li class="nav-menu-item">
-                    <a href="#contacto" id="contact-link" class="nav-menu-link nav-link">Contacto</a>
+                    <a href="#contact" id="contact-link" class="nav-menu-link nav-link">Contacto</a>
                 </li>
             </ul>
         </nav>
@@ -46,17 +43,18 @@
     <main>
         <section id="hero">
             <div class="hero-container">
-                <div data-aos="fade-up" class="hero-text">
-                    <h1>HONEST MARKETING MADE AT HOME</h1>
-                    <p>Somos una Agencia de Marketing Digital en Barcelona que colabora con marcas que buscan dejar
-                        huella. Creemos que con la mezcla adecuada de estrategia y creatividad, no existen imposibles.
-                        Nuestro propósito es ser más que tu Agencia de Marketing Digital. Queremos ser parte de tu
-                        proyecto y trabajar de la mano contigo para acompañarte hasta donde quieras llegar. ¿Preparado
-                        para el cambio?</p>
+                <div class="hero-text">
+                    <h1>Se parte de nuestra familia donde los sueños no son inalcanzables</h1>
+                    <p>Somos Berlín una agencia de marketing creada con la intención de poder satisfacer las necesidades
+                        creativas y de marketing para nuestros clientes. </p>
                 </div>
                 <div class="scroll-down-container">
                     <a href="#nosotros">
-                        <div id="scroll-d"><i class="fa fa-angle-down"></i></div>
+                        <div class="indicator">
+                        </div>
+                    </a>
+                    <a href="#nosotros">
+                        <p>Ver más</p>
                     </a>
                 </div>
         </section>
@@ -64,22 +62,15 @@
         </div>
         </section>
         <section id="nosotros">
-
+            <h1>Sobre Nosotros</h1>
         </section>
-        <section id="servicios">
-
+        <section id="works">
+            <h1>Servicios</h1>
         </section>
-        <section id="aliados">
-
-        </section>
-        <section id="contacto">
-
+        <section id="contact">
+            <h1>Contacto</h1>
         </section>
     </main>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
 </body>
 
 </html>

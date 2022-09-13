@@ -11,6 +11,7 @@
 .nav {
   display: flex;
   justify-content: space-between;
+
   max-width: 992px;
   margin: 0 auto;
 }
@@ -21,7 +22,7 @@
 }
 
 .logo {
-  font-size: 26px;
+  font-size: 30px;
   font-weight: bold;
   padding: 0 40px;
   line-height: 80px;
@@ -34,9 +35,8 @@
 }
 
 .nav-menu-item {
-  font-size: 15px;
+  font-size: 18px;
   margin: 0 10px;
-  font-weight: bold;
   line-height: 80px;
   text-transform: uppercase;
   width: max-content;
@@ -45,30 +45,12 @@
 .nav-menu-link {
   padding: 8px 12px;
   border-radius: 3px;
-  position: relative;
 }
 
 .nav-menu-link:hover,
 .nav-menu-link_active {
-  transition: 0.5s;
-}
-
-.nav-menu-link:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
   background-color: var(--color-active);
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-
-.nav-menu-link:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+  transition: 0.5s;
 }
 
 /* TOGGLE */
@@ -85,15 +67,15 @@
 }
 
 /* MOBILE */
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .header {
-    height: 80px;
+    height: 60px;
   }
 
   .logo {
     font-size: 25px;
     padding: 0 20px;
-    line-height: 80px;
+    line-height: 60px;
   }
 
   .nav-menu {
@@ -102,13 +84,11 @@
     margin: 0;
     background-color: var(--color-secondary);
     position: fixed;
-    top: 80px;
+    top: 60px;
     width: 100%;
-    padding: 20px 0;
-
+    padding: 50% 0;
     height: calc(100% - 60px);
     overflow-y: hidden;
-
     left: 100%;
     transition: left 0.3s;
   }
