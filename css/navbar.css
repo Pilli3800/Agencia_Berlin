@@ -45,12 +45,30 @@
 .nav-menu-link {
   padding: 8px 12px;
   border-radius: 3px;
+  position: relative;
 }
 
 .nav-menu-link:hover,
 .nav-menu-link_active {
-  background-color: var(--color-active);
   transition: 0.5s;
+}
+
+.nav-menu-link:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-active);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav-menu-link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 /* TOGGLE */
@@ -67,15 +85,15 @@
 }
 
 /* MOBILE */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .header {
-    height: 60px;
+    height: 80px;
   }
 
   .logo {
     font-size: 25px;
     padding: 0 20px;
-    line-height: 60px;
+    line-height: 80px;
   }
 
   .nav-menu {
@@ -84,9 +102,9 @@
     margin: 0;
     background-color: var(--color-secondary);
     position: fixed;
-    top: 60px;
+    top: 80px;
     width: 100%;
-    padding: 50% 0;
+    padding: 20px 0;
     height: calc(100% - 60px);
     overflow-y: hidden;
     left: 100%;

@@ -19,6 +19,8 @@
 
     <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
     <script defer src="./js/index.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -44,7 +46,7 @@
     <main>
         <section id="hero">
             <div class="hero-container">
-                <div class="hero-text">
+                <div class="hero-text" data-aos="fade-up">
                     <h1>Se parte de nuestra familia donde los sueños no son inalcanzables</h1>
                     <p>Somos Berlín una agencia de marketing creada con la intención de poder satisfacer las necesidades
                         creativas y de marketing para nuestros clientes. </p>
@@ -63,13 +65,66 @@
         </div>
         </section>
         <section id="nosotros">
-            <div class="nosotros-title">
+            <div class="nosotros-title" data-aos="fade-in">
                 <h1>¿Quiénes Somos?</h1>
             </div>
             <div class="nosotros-container">
-                <div class="nosotros-texto-main">
+                <div class="nosotros-texto-main" data-aos="fade">
                     <p>Somos Berlín una agencia de marketing que brinda asesoría, creación y manejo de marca de manera
-                    física y digital, con el fin de que nuestros clientes puedan exponer una marca comercial al público.</p>
+                        física y digital, con el fin de que nuestros clientes puedan exponer una marca comercial al
+                        público.</p>
+                </div>
+                <div class="cards" data-aos="fade-down">
+                    <div class="card">
+                        <img src="./img/objetivo.png" alt="mision">
+                        <h4 class="titleCard">
+                            Misión
+                        </h4>
+                        <p class="textCard">
+                            Satisfacer la necesidad de nuestro cliente en cuestión al desarrollo y manejo de marca,
+                            mediante el uso de herramientas tecnológicas tanto en el ámbito físico como digital,
+                            logrando así un posicionamiento comercial.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="./img/vision.png" alt="vision">
+                        <h4 class="titleCard">
+                            Visión
+                        </h4>
+                        <p class="textCard">
+                            Posicionarnos como la agencia de marketing N°1 de la ciudad de Arequipa metropolitana,
+                            gracias al profesionalismo y gran manejo de marcas comerciales.
+                        </p>
+                    </div>
+                    <div class="card valores">
+                        <img src="./img/valoration.png" alt="vision">
+                        <h4 class="titleCard">
+                            Nuestros Valores
+                        </h4>
+                        <p>
+                        <ul class="textCard">
+                            <li>
+                                Respeto
+                            </li>
+                            <li>
+                                Honestidad
+                            </li>
+                            <li>
+                                Equidad
+                            </li>
+                            <li>
+                                Libertad
+                            </li>
+                            <li>
+                                Confianza
+                            </li>
+                            <li>
+                                Responsabilidad
+                            </li>
+                        </ul>
+
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -80,6 +135,10 @@
             <h1>Contacto</h1>
         </section>
     </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
