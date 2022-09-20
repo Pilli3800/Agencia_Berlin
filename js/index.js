@@ -1,8 +1,8 @@
 const navToggle = document.querySelector(".nav-toggle");
 const navMenu = document.querySelector(".nav-menu");
 const Nosotros = document.querySelector("#nosotros-link");
-const works = document.querySelector("#works-link");
-const contact = document.querySelector("#contact-link");
+const servicios = document.querySelector("#servicios-link");
+const contacto = document.querySelector("#contacto-link");
 
 navToggle.addEventListener("click", () => {
   navMenu.classList.toggle("nav-menu_visible");
@@ -17,9 +17,9 @@ navToggle.addEventListener("click", () => {
 Nosotros.addEventListener("click", () => {
   navMenu.classList.toggle("nav-menu_visible");
 });
-works.addEventListener("click", () => {
+servicios.addEventListener("click", () => {
   navMenu.classList.toggle("nav-menu_visible");
 });
-contact.addEventListener("click", () => {
+contacto.addEventListener("click", () => {
   navMenu.classList.toggle("nav-menu_visible");
 });
