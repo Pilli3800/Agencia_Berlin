@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/hero.css">
     <link rel="stylesheet" href="./css/nosotros.css">
     <link rel="stylesheet" href="./css/servicios.css">
+    <link rel="stylesheet" href="./css/contacto.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,7 +40,7 @@
                     <a href="#servicios" id="servicios-link" class="nav-menu-link nav-link">Servicios</a>
                 </li>
                 <li class="nav-menu-item">
-                    <a href="#contact" id="contacto-link" class="nav-menu-link nav-link">Contacto</a>
+                    <a href="#contacto" id="contacto-link" class="nav-menu-link nav-link">Contacto</a>
                 </li>
             </ul>
         </nav>
@@ -229,7 +230,7 @@
                                 Landing Page
                             </li>
                             <li>
-                                Web empresarial 
+                                Web empresarial
                             </li>
                             <li>
                                 Sistema Web
@@ -239,8 +240,34 @@
                 </div>
             </div>
         </section>
-        <section id="contact">
-            <h1>Contacto</h1>
+        <section id="contacto">
+            <div class="contacto-container">
+                <h1>Contacto</h1>
+                <div class="group">
+                    <input required="" type="text" class="input" id="nombre">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Nombres y Apellidos</label>
+                </div>
+                <div class="group">
+                    <input required="" type="text" class="input" id="email">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Correo Electrónico</label>
+                </div>
+                <div class="group">
+                    <input required="" type="text" class="input" id="telefono">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Teléfono</label>
+                </div>
+                <textarea required="" type="text" class="input" id="mensaje"
+                    placeholder="Escribe tu mensaje"></textarea>
+                <div>
+                    <button class="button-enviar"> <span>Enviar</span>
+                    </button>
+                </div>
+            </div>
         </section>
     </main>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
